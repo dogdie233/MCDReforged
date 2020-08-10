@@ -127,8 +127,11 @@ This is a parsed information object. It belongs to the Info class in `utils/info
 | player | If the info is player's chat message, the value is a string representing the player's name, otherwise None |
 | source | An integer. `0` if the message is from the server's standard output stream;` 1` if it is from the console input |
 | logging_level | A str, the logging level of the content like `INFO` or `WARN`. None if it is from console input |
+| ip | A str, the ip when the player connects to the server, if it is a carpet robot, the ip is `local`, if it is a real player, the ip is `aaa.bbb.ccc.ddd:eeeee` |
+| position | A tuple, the position of the player when logging in, the index value 012 corresponds to the xyz axis |
 | is_player | Equivalent to `player != None` |
 | is_user | Equivalent to `source == 1 or is_player` |
+| is_bot | Equivalent to `ip == "local"` |
 
 ### Samples
 

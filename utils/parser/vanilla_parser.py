@@ -8,7 +8,7 @@ from utils.parser.base_parser import BaseParser
 
 class VanillaParser(BaseParser):
 	NAME = tool.remove_suffix(os.path.basename(__file__), '.py')
-	PLAYER_JOINED_PATTERN = re.compile(r'\w{1,16}\[(?:/[\d.:]+|local)\] logged in with entity id \d+ at \((\[\w+\])?[\dE\-., ]+\)')
+	PLAYER_JOINED_PATTERN = re.compile(r'\w{1,16}\[(/[\d.:]+|local)\] logged in with entity id \d+ at \(([\dE\-., ]+)\)')
 	STOP_COMMAND = 'stop'
 	LOGGER_NAME_CHAR_SET = r'\w /\#\-'
 
@@ -42,7 +42,11 @@ class VanillaParser(BaseParser):
 
 	def parse_player_joined(self, info):
 		# Steve[/127.0.0.1:9864] logged in with entity id 131 at (187.2703, 146.79014, 404.84718)
-		if not info.is_user and self.PLAYER_JOINED_PATTERN.fullmatch(info.content):
+		match_obj = self.PLAYER_JOINED_PATTERN.fullmatch(info.content)
+		if not info.is_user and match_obj is not None:
+			info.ip = match_obj.group(1).replace("/", "")
+			position = match_obj.group(2).split(", ")
+			info.position = (position[0], position[1], position[2])
 			return info.content.split('[', 1)[0]
 		return None
 

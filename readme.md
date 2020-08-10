@@ -1,8 +1,10 @@
-MCDReforged
---------
-![MCDR-banner](https://raw.githubusercontent.com/Fallen-Breath/MCDReforged/master/logo_long.png)
+# Modified based on MCDReforge of Fallen Breath
 
-[中文](https://github.com/Fallen-Breath/MCDReforged/blob/master/doc/readme_cn.md)
+# MCDReforged - dogdiever
+--------
+![MCDR-banner](https://raw.githubusercontent.com/dogdie233/MCDReforged/dogdie_ver/logo_long.png)
+
+[中文](https://github.com/dogdie233/MCDReforged/blob/dogdie_ver/doc/readme_cn.md)
 
 > This is a python based Minecraft server control tool
 
@@ -43,7 +45,7 @@ The requirements are also stored in `requirements.txt`. You can execute `pip ins
 
 ## Usage
 
-1. Download the latest MCDR release in the [release page](https://github.com/Fallen-Breath/MCDReforged/releases). Of course you can just clone this repository to get the latest build (might be unstable but with latest features)
+1. Download the latest MCDR release in the [release page](https://github.com/dogdie233/MCDReforged/releases). Of course you can just clone this repository to get the latest build (might be unstable but with latest features)
 2. Fill the config file. Put all server related file and MCDR plugins into correct folders
 3. Execute `python MCDReforged.py` to start MCDR
 
@@ -186,7 +188,7 @@ Keep it as `false` unless necessary
 
 ## Plugin
 
-[Plugin document](https://github.com/Fallen-Breath/MCDReforged/blob/master/doc/plugin.md)
+[Plugin document](https://github.com/dogdie233/MCDReforged/blob/master/doc/plugin.md)
 
 Plugin usage can refer to `plugins/sample_plugin.py`
 

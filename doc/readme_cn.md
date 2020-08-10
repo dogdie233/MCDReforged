@@ -1,7 +1,9 @@
-MCDReforged
+# 基于 Fallen_Breath 的 MCDReforged 魔改而成
+
+# MCDReforged - dogdiever
 --------
 
-[English](https://github.com/Fallen-Breath/MCDReforged/blob/master/readme.md)
+[English](https://github.com/dogdie233/MCDReforged/blob/dogdie_ver/readme.md)
 
 > 这是一个基于 Python 的 Minecraft 服务端控制工具
 
@@ -42,7 +44,7 @@ Python 的版本需要 Python 3.6+。已在如下环境中测试运行通过:
 
 ## 使用方法
 
-1. 于 [Release 页面](https://github.com/Fallen-Breath/MCDReforged/releases) 下载最新的 MCDR 并解压。当然你可以直接 clone 本仓库以获得最新构建（可能不稳定但会有最新功能）
+1. 于 [Release 页面](https://github.com/dogdie233/MCDReforged/releases) 下载最新的 MCDR 并解压。当然你可以直接 clone 本仓库以获得最新构建（可能不稳定但会有最新功能）
 2. 填写配置文件，并将服务端相关文件以及 MCDR 插件放至相应文件夹中
 3. 使用 `python MCDReforged.py` 运行 MCDR
 
@@ -185,7 +187,7 @@ MCDR 使用的语言
 
 ## 插件
 
-[插件文档](https://github.com/Fallen-Breath/MCDReforged/blob/master/doc/plugin_cn.md)
+[插件文档](https://github.com/dogdie233/MCDReforged/blob/dogdie_ver/doc/plugin_cn.md)
 
 插件用法可参考 `plugins/sample_plugin.py`
 

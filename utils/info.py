@@ -37,6 +37,16 @@ class Info:
 		# the logging level of the server's stdout, such as "INFO" or "WARN"
 		self.logging_level = None
 
+		# the ip of the player. if it the player is bot, it's "local"
+		self.ip = None
+
+		# the position of the player.
+		self.position = None
+
+	@property
+	def is_bot(self):
+		return self.ip == "local"
+
 	@property
 	def is_player(self):
 		return self.player is not None

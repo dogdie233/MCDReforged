@@ -127,8 +127,11 @@ MCDReforged 插件文档
 | player | 当这条消息是一条来自玩家的聊天信息时，值为代表该玩家名称的字符串，否则为 None |
 | source | 一个整数。若该消息是来自服务端的标准输出流，则为 `0`；若来自控制台输入，则为 `1` |
 | logging_level | 一个字符串，代表该信息的 logging 级别，例如 `INFO` 或者 `WARN`。如果该消息来自控制台输入，则为 None |
+| ip | 一个字符串，玩家连接到服务器时的ip，如果是carpet的机器人则是 `local` ，如果是真实的玩家则是 `aaa.bbb.ccc.ddd:eeeee`  |
+| position | 一个元组，玩家登入时的位置，索引值012分别对应xyz轴，小数 |
 | is_player | 等价于 `player != None` |
 | is_user | 等价于 `source == 1 or is_player` |
+| is_bot | 等价于 `ip == "local"` |
 
 ### 例子
 
